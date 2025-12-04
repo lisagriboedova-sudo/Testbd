@@ -33,7 +33,7 @@
 
     function db_query($query) {
         global $mysqli;
-//        return $mysqli->query($query);
+        return $mysqli->query($query);
     }
 
     function db_fetch_assoc($res) {
@@ -54,4 +54,5 @@
     function db_real_escape_string($escapestr) {
         global $mysqli;
         return $mysqli->real_escape_string($escapestr);
+
     }
