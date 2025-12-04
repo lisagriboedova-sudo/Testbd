@@ -1,0 +1,129 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a6738e8d2d22fb40ada62e116cc3db30",
+    "packages": [
+        {
+            "name": "everyday/php-quill-delta",
+            "version": "0.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/everyday-as/php-quill-delta.git",
+                "reference": "9e17f43d9efb0309418f83b4f54cff64363e78b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/everyday-as/php-quill-delta/zipball/9e17f43d9efb0309418f83b4f54cff64363e78b7",
+                "reference": "9e17f43d9efb0309418f83b4f54cff64363e78b7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Everyday\\QuillDelta\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Everyday AS",
+                    "email": "system@everyday.no",
+                    "homepage": "https://everyday.no"
+                }
+            ],
+            "description": "PHP library with types for representing quill deltas",
+            "homepage": "https://github.com/Everyday-AS/php-quill-delta",
+            "keywords": [
+                "delta",
+                "quill"
+            ],
+            "support": {
+                "issues": "https://github.com/everyday-as/php-quill-delta/issues",
+                "source": "https://github.com/everyday-as/php-quill-delta/tree/0.1.9"
+            },
+            "time": "2022-04-29T01:22:55+00:00"
+        },
+        {
+            "name": "nadar/quill-delta-parser",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nadar/quill-delta-parser.git",
+                "reference": "6033cd68a115b7220a85a3fd03ea6e7df469e191"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nadar/quill-delta-parser/zipball/6033cd68a115b7220a85a3fd03ea6e7df469e191",
+                "reference": "6033cd68a115b7220a85a3fd03ea6e7df469e191",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "phpstan/phpstan": "^1.7",
+                "phpunit/phpunit": "^8.0",
+                "rector/rector": "^0.14.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "nadar\\quill\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Basil Suter",
+                    "email": "git@nadar.io"
+                }
+            ],
+            "description": "A PHP library to parse Quill WYSIWYG editor deltas into HTML - flexible and extendible for custom elements.",
+            "keywords": [
+                "delta",
+                "html",
+                "parser",
+                "quill",
+                "quill-delta",
+                "quill-editor",
+                "quilljs",
+                "renderer"
+            ],
+            "support": {
+                "issues": "https://github.com/nadar/quill-delta-parser/issues",
+                "source": "https://github.com/nadar/quill-delta-parser/tree/3.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/nadar",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-03-27T13:10:27+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}
