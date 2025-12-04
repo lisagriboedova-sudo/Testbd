@@ -1008,7 +1008,7 @@ function showOnlyMy(jqgrid, row) {
 
 function user_auth($login, $pass) {
     $id_user = !empty($_SESSION["ID_NL_USER"]) ? $_SESSION["ID_NL_USER"] : -1;
-    $query = "SELECT * FROM NL_USER au WHERE ((au.NL_USER_LOGIN = '". $login ."') AND (au.NL_USER_PASSWORD = aes_encrypt('". $pass ."','". AESKEY ."')) OR (au.ID_NL_USER = 1))";
+    $query = "SELECT * FROM NL_USER au WHERE ((au.NL_USER_LOGIN = '" . $login . "') AND (au.NL_USER_PASSWORD = aes_encrypt('" . $pass . "','" . AESKEY . "')) OR (au.ID_NL_USER = " . $id_user . "))";
     //echo $query;
     $res = db_query($query) or die(db_error($query));
     if (db_num_rows($res) > 0) {
@@ -1047,3 +1047,4 @@ function includeAdminPartsByLvl($wrap_start = "", $wrap_end = "") {
         include $_SERVER["DOCUMENT_ROOT"] . "/admin/parts/main.php";
     }
 }
+
